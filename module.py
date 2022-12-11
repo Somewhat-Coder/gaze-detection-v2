@@ -82,21 +82,6 @@ def faceLandmakDetector(image, gray, face, Draw=True):
     return image, pointList
 
 
-# def blinkDetector(eyePoints):
-#     top = eyePoints[1:3]
-#     bottom = eyePoints[4:6]
-
-#     topMid = midpoint(top[0], top[1])
-#     bottomMid = midpoint(bottom[0], bottom[1])
-   
-#     VerticalDistance = eucaldainDistance(topMid, bottomMid)
-#     HorizontalDistance = eucaldainDistance(eyePoints[0], eyePoints[3])
-
-
-#     blinkRatio = (HorizontalDistance/VerticalDistance)
-#     return blinkRatio, topMid, bottomMid
-
-
 
 def EyeTracking(image, gray, eyePoints):
    
